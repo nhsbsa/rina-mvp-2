@@ -12,12 +12,21 @@
 
 <!-- Set the page title -->
 {% block pageTitle %}
-  NHS.UK prototype kit
+  Overseas Healthcare Service RINA
 {% endblock %}
 
 <!-- For adding a breadcrumb -->
 <!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/breadcrumbs -->
 {% block beforeContent %}
+  <nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
+    <div class="nhsuk-back-link nhsuk-width-container-fluid">
+      <a class="nhsuk-back-link__link" href="#">
+        <svg class="nhsuk-icon nhsuk-icon__chevron-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" height="24" width="24">
+          <path d="M8.5 12c0-.3.1-.5.3-.7l5-5c.4-.4 1-.4 1.4 0s.4 1 0 1.4L10.9 12l4.3 4.3c.4.4.4 1 0 1.4s-1 .4-1.4 0l-5-5c-.2-.2-.3-.4-.3-.7z"></path>
+        </svg>
+        Go back to Manage case</a>
+    </div>
+  </nav>
 {% endblock %}
 
 <!-- For adding a back link -->
@@ -28,62 +37,62 @@
 <!-- For adding page content -->
 <!-- Page layout code can be found at https://service-manual.nhs.uk/design-system/styles/layout -->
 {% block content %}
+<div class="nhsuk-width-container-fluid">
   <div class="nhsuk-grid-row">
     <div class="nhsuk-grid-column-two-thirds">
 
-      <!-- Change the page title here -->
-      <h1>
-        NHS.UK prototype kit
-        <span class="nhsuk-caption-xl nhsuk-caption--bottom">Version {{version}}</span>
-      </h1>
-
       <!-- Add your content here -->
-      <!-- Styles and components can be found at https://service-manual.nhs.uk/design-system -->
 
-      <p class="nhsuk-lede-text">
-        This kit lets you rapidly create HTML prototypes of NHS services.
-      </p>
+      <div class="nhsuk-card">
+        <div class="nhsuk-card__content">
+          <h1>Add a note</h1>
+          <p>This will be added to your note, along with the RINA Business and International IDs for this case.</p>
+          
+          <div class="nhsuk-form-group">
+            <fieldset class="nhsuk-fieldset">
+              <legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--l">
+                <h2 class="nhsuk-fieldset__heading">
+                  What is the reason for your note?
+                </h2>
+              </legend>
+          
+              <div class="nhsuk-radios">
+          
+                <div class="nhsuk-radios__item">
+                  <input class="nhsuk-radios__input" id="example-1" name="example" type="radio" value="accepted">
+                  <label class="nhsuk-label nhsuk-radios__label" for="example-1">
+                    Entitlement accepted
+                  </label>
+                </div>
+          
+                <div class="nhsuk-radios__item">
+                  <input class="nhsuk-radios__input" id="example-2" name="example" type="radio" value="rejected">
+                  <label class="nhsuk-label nhsuk-radios__label" for="example-2">
+                    Entitlement rejected
+                  </label>
+                </div>
 
-      <hr>
+                <div class="nhsuk-radios__item">
+                  <input class="nhsuk-radios__input" id="example-2" name="example" type="radio" value="other">
+                  <label class="nhsuk-label nhsuk-radios__label" for="example-2">
+                    Other
+                  </label>
+                </div>
+          
+              </div>
+            </fieldset>
+          </div>
 
-      <h2>
-        About this page
-      </h2>
+          <button class="nhsuk-button" data-module="nhsuk-button" type="submit">
+            Continue
+          </button>
 
-      <p>
-        Use this page as the index for your project.
-      </p>
+        </div>
+      </div>
       
-      <p>
-        You'll find the code for this page at <strong>/app/views/index.html</strong>.
-      </p>
-
-      <p>
-        There is also an <a href="/page-example">example page</a>, which contains a selection of NHS.UK frontend styles and components.
-      </p>
-
-      <hr>
-
-      <h2>
-        Get started
-      </h2>
-
-      <p>Get started by using the:</p>
-
-      <ul>
-        <li>
-          <a href="/docs/how-tos">how to guides</a>
-        </li>
-        <li>
-          <a href="/docs/page-templates">page templates</a>
-        </li>
-        <li>
-          code snippets for styles and components from the <a href="https://service-manual.nhs.uk/design-system">NHS digital service manual</a>
-        </li>
-      </ul>
-
       <!-- End of content -->
 
     </div>
   </div>
+</div>
 {% endblock %}

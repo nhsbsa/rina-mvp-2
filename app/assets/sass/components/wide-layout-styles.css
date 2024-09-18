@@ -1,0 +1,52 @@
+.nhsuk-breadcrumb {
+  background-color: #ffffff;
+  padding-bottom: 12px;
+  padding-top: 12px;
+}
+
+.nhsuk-width-container-fluid {
+  margin: 0 16px;
+  max-width: 100%;
+}
+
+nav {
+  display: block;
+  unicode-bidi: isolate;
+}
+
+div {
+  display: block;
+  unicode-bidi: isolate;
+}
+
+header {
+  display: block;
+  unicode-bidi: isolate;
+  position: relative;
+  max-width: 100%;
+}
+
+.nhsuk-header__logo {
+  float: left;
+}
+
+.nhsuk-width-container, .nhsuk-header__container {
+  margin: 0 16px;
+  max-width: 100% !important;
+}
+
+.nhsuk-main-wrapper {
+  padding-top: 48px !important;
+}
+
+.nhsuk-card {
+  margin-bottom: 40px;
+  background: #ffffff;
+  border: 1px solid #d8dde0;
+  position: relative;
+  width: 100%;
+}
+
+.nhsuk-card__content {
+  padding: 32px;
+}/*# sourceMappingURL=wide-layout-styles.css.map */
