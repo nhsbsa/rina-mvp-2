@@ -1,0 +1,551 @@
+<!-- Use this page as the index for your project -->
+
+<!-- ADDING CUSTOM CSS - Add your custom CSS or Sass in /app/assets/sass/main.scss -->
+
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'layout.html' %}
+<!-- 
+  In /views/layout.html you can:
+    - change the header and footer 
+    - add custom CSS and JavaScript
+-->
+
+<!-- Set the page title -->
+{% block pageTitle %}
+  Overseas Healthcare Service RINA
+{% endblock %}
+
+<!-- For adding a breadcrumb -->
+<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/breadcrumbs -->
+{% block beforeContent %}
+  <nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
+    <div class="nhsuk-back-link nhsuk-width-container-fluid">
+      <a class="nhsuk-back-link__link" href="#" onclick="history.back()">Home</a>
+    </div>
+  </nav>
+{% endblock %}
+
+<!-- For adding a back link -->
+<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/back-link -->
+{% block outerContent %}
+{% endblock %}
+
+<!-- For adding page content -->
+<!-- Page layout code can be found at https://service-manual.nhs.uk/design-system/styles/layout -->
+{% block content %}
+<div class="nhsBSA-sidebar-container">
+  <div class="nhsBSA-sidebar-wrapper">
+    <div class="nhsuk-header__navigation">
+
+      <h2>52249 <strong class="nhsuk-tag nhsuk-tag--yellow">
+        Open
+      </strong></h2>
+      <p>SBUC 1 CP</p>
+
+      <div class="nhsuk-timeline" id="timeline">
+        <ol class="nhsuk-timeline__events">
+
+          <!-- SO72 -->
+
+          <li class="nhsuk-timeline__events--entry">
+            <div class="nhsuk-timeline__header nhsuk-u-padding-top-2">
+              <div class="flag" style="background-image: url('../assets/images/fr.png')" role="presentation"></div>
+              <h3 class="nhsuk-timeline__title"><a href="view-s044">S071 v.1</a></h3>
+            </div>
+            <p class="nhsuk-timeline__date nhsuk-u-margin-top-4">
+              <time>Received 13 September 2023 at 11.48am from Norway</time>
+            </p>
+  
+            <ul class="nhsuk-list nhsuk-body-s">
+              <li>
+                <details class="nhsuk-details nhsuk-u-margin-bottom-2">
+                  <summary class="nhsuk-details__summary">
+                    <span class="nhsuk-details__summary-text">
+                      Attachments (1)
+                    </span>
+                  </summary>
+                  <div class="nhsuk-details__text">
+                    <ul class="nhsuk-list">
+                      <li>scanneddocument.pdf <a href="">Download</a></li>
+                    </ul>
+                  </div>
+                </details>
+              </li>
+              <li>
+                <details class="nhsuk-details">
+                  <summary class="nhsuk-details__summary">
+                    <span class="nhsuk-details__summary-text">
+                      Actions (1)
+                    </span>
+                  </summary>
+                  <div class="nhsuk-details__text">
+                    <ul class="nhsuk-list">
+                      <li><a href="">Create S072 reply</a></li>
+                    </ul>
+                  </div>
+                </details>
+              </li>
+            </ul>
+          </li>
+        </ol>
+      </div>
+
+      <!-- Timeline - End -->
+
+    </div>
+    <div class="nhsBSA-sidebar-content">
+      <div class="nhsuk-width-container-fluid">
+        <h1 class="nhsuk-heading-xl ">
+          Manage case
+        </h1>
+
+        <!-- in-page manage case personal details tabs - Start -->
+
+      <div class="nhsuk-tabs" data-module="nhsuk-tabs">
+        <h2 class="nhsuk-tabs__title">
+          Contents
+        </h2>
+      
+        <ul class="nhsuk-tabs__list">
+      
+          <li class="nhsuk-tabs__list-item nhsuk-tabs__list-item--selected">
+            <a class="nhsuk-tabs__tab" href="#applicant-details">
+              Applicant details
+            </a>
+          </li>
+      
+          <li class="nhsuk-tabs__list-item">
+            <a class="nhsuk-tabs__tab" href="#case-details">
+              Case details
+            </a>
+          </li>
+      
+          <li class="nhsuk-tabs__list-item">
+            <a class="nhsuk-tabs__tab" href="#participants">
+              Participants <span>(2)</span>
+            </a>
+          </li>
+      
+          <li class="nhsuk-tabs__list-item">
+            <a class="nhsuk-tabs__tab" href="#attachments">
+              Attachments <span>(4)</span>
+            </a>
+          </li>
+        </ul>
+
+        <div class="nhsuk-tabs__panel" id="applicant-details">
+          <table class="nhsuk-table">
+            <caption class="nhsuk-table__caption nhsuk-u-margin-bottom-3">Applicant details</caption>
+              <tbody class="nhsuk-table__body">
+                <tr role="row" class="nhsuk-table__row">
+                  <th class="nhsuk-table__header">Full name</th>
+                  <td class="nhsuk-table__cell ">Graeme Rutherford</td>
+                  <th class="nhsuk-table__header">NI number</th>
+                  <td class="nhsuk-table__cell ">JG 08 23 89 A</td>
+                </tr>
+                <tr role="row" class="nhsuk-table__row">
+                  <th class="nhsuk-table__header">Date of birth</th>
+                  <td class="nhsuk-table__cell ">3 December 1956</td>
+                  <th class="nhsuk-table__header">Entitlement start date</th>
+                  <td class="nhsuk-table__cell ">4 December 2023</td>
+                </tr>
+                <tr role="row" class="nhsuk-table__row">
+                  <th class="nhsuk-table__header">Address</th>
+                  <td class="nhsuk-table__cell ">Kirsten Flagstads Plass 1, 0150 Oslo, Norway</td>
+                  <th class="nhsuk-table__header">Entitlement end date</th>
+                  <td class="nhsuk-table__cell "></td>
+                </tr>
+                <tr role="row" class="nhsuk-table__row ohs-table-no-last-row-border">
+                  <th class="nhsuk-table__header">Status</th>
+                  <td class="nhsuk-table__cell ">Pensioner <span class="ohs-status-pensioner">Pensioner age</span></td>
+                </tr>
+              </tbody>
+          </table>
+
+        </div>
+      
+        <div class="nhsuk-tabs__panel nhsuk-tabs__panel--hidden" id="case-details">
+      
+          <table class="nhsuk-table">
+            <caption class="nhsuk-table__caption nhsuk-u-margin-bottom-3">Case details</caption>
+            <thead role="rowgroup" class="nhsuk-table__head">
+              <tr role="row">
+                <th role="columnheader" class="" scope="col">
+                  Case manager
+                </th>
+                <th role="columnheader" scope="col">
+                  Cases opened
+                </th>
+                <th role="columnheader" scope="col">
+                  Cases closed
+                </th>
+              </tr>
+            </thead>
+            <tbody class="nhsuk-table__body">
+              <tr role="row" class="nhsuk-table__row">
+                <td class="nhsuk-table__cell">David Francis</td>
+                <td class="nhsuk-table__cell">24</td>
+                <td class="nhsuk-table__cell">18</td>
+              </tr>
+              <tr role="row" class="nhsuk-table__row">
+                <td class="nhsuk-table__cell">Paul Farmer</td>
+                <td class="nhsuk-table__cell">16</td>
+                <td class="nhsuk-table__cell">20</td>
+              </tr>
+              <tr role="row" class="nhsuk-table__row">
+                <td class="nhsuk-table__cell">Rita Patel</td>
+                <td class="nhsuk-table__cell">24</td>
+                <td class="nhsuk-table__cell">27</td>
+              </tr>
+            </tbody>
+          </table>
+      
+        </div>
+      
+        <div class="nhsuk-tabs__panel nhsuk-tabs__panel--hidden" id="participants">
+      
+          <table class="nhsuk-table">
+            <caption class="nhsuk-table__caption nhsuk-u-margin-bottom-3">Participants</caption>
+            <thead role="rowgroup" class="nhsuk-table__head">
+              <tr role="row">
+                <th role="columnheader" class="" scope="col">
+                  Case manager
+                </th>
+                <th role="columnheader" scope="col">
+                  Cases opened
+                </th>
+                <th role="columnheader" scope="col">
+                  Cases closed
+                </th>
+              </tr>
+            </thead>
+            <tbody class="nhsuk-table__body">
+              <tr role="row" class="nhsuk-table__row">
+                <td class="nhsuk-table__cell">David Francis</td>
+                <td class="nhsuk-table__cell ">98</td>
+                <td class="nhsuk-table__cell ">95</td>
+              </tr>
+              <tr role="row" class="nhsuk-table__row">
+                <td class="nhsuk-table__cell">Paul Farmer</td>
+                <td class="nhsuk-table__cell ">122</td>
+                <td class="nhsuk-table__cell ">131</td>
+              </tr>
+              <tr role="row" class="nhsuk-table__row">
+                <td class="nhsuk-table__cell">Rita Patel</td>
+                <td class="nhsuk-table__cell ">126</td>
+                <td class="nhsuk-table__cell ">142</td>
+              </tr>
+            </tbody>
+          </table>
+      
+        </div>
+      
+        <div class="nhsuk-tabs__panel nhsuk-tabs__panel--hidden" id="attachments">
+      
+          <table class="nhsuk-table">
+            <caption class="nhsuk-table__caption nhsuk-u-margin-bottom-3">Attachments</caption>
+            <thead role="rowgroup" class="nhsuk-table__head">
+              <tr role="row">
+                <th role="columnheader" class="" scope="col">
+                  Case manager
+                </th>
+                <th role="columnheader" class="" scope="col">
+                  Cases opened
+                </th>
+                <th role="columnheader" class="" scope="col">
+                  Cases closed
+                </th>
+              </tr>
+            </thead>
+            <tbody class="nhsuk-table__body">
+              <tr role="row" class="nhsuk-table__row">
+                <td class="nhsuk-table__cell">David Francis</td>
+                <td class="nhsuk-table__cell ">1380</td>
+                <td class="nhsuk-table__cell ">1472</td>
+              </tr>
+              <tr role="row" class="nhsuk-table__row">
+                <td class="nhsuk-table__cell">Paul Farmer</td>
+                <td class="nhsuk-table__cell ">1129</td>
+                <td class="nhsuk-table__cell ">1083</td>
+              </tr>
+              <tr role="row" class="nhsuk-table__row">
+                <td class="nhsuk-table__cell">Rita Patel</td>
+                <td class="nhsuk-table__cell ">1539</td>
+                <td class="nhsuk-table__cell ">1265</td>
+              </tr>
+            </tbody>
+          </table>
+      
+        </div>
+      
+      </div>
+
+      <!-- in-page manage case personal details tabs - End -->
+
+
+      <!-- in-page OHS Matched record - select record - Start -->
+
+      <div class="nhsuk-card">
+        <div class="nhsuk-card__content">
+          <div class="nhsuk-grid-column-two-thirds" style="padding-left:0;">
+            <h2 class="nhsuk-heading-m" style="margin-top:12px;">OHS matched record</h2>
+          </div>
+          <div class="nhsuk-grid-column-one-thirds" style="text-align:right;">
+            <button class="nhsuk-button nhsuk-button--secondary" data-module="nhsuk-button" type="submit">
+              Create a new record
+            </button>
+          </div>
+
+          <p><span class="nhsuk-u-font-weight-bold nhsuk-u-padding-right-4">Graeme Rutherford</span> JG 08 23 89 A</p>
+
+          <div class="nhsuk-tabs" data-module="nhsuk-tabs">
+            <h2 class="nhsuk-tabs__title nhsuk-u-visually-hidden">
+              Main case details
+            </h2>
+          
+            <ul class="nhsuk-tabs__list">
+          
+              <li class="nhsuk-tabs__list-item nhsuk-tabs__list-item--selected">
+                <a class="nhsuk-tabs__tab" href="#personal-details">
+                  Personal details
+                </a>
+              </li>
+          
+              <li class="nhsuk-tabs__list-item">
+                <a class="nhsuk-tabs__tab" href="#entitlements">
+                  Entitlements
+                </a>
+              </li>
+          
+            </ul>
+            <div class="nhsuk-tabs__panel" id="personal-details">
+              <table class="nhsuk-table">
+                <caption class="nhsuk-table__caption nhsuk-u-margin-bottom-3">Personal-details</caption>
+                  <tbody class="nhsuk-table__body">
+                    <tr role="row" class="nhsuk-table__row">
+                      <th class="nhsuk-table__header">Full name</th>
+                      <td class="nhsuk-table__cell ">Graeme Rutherford</td>
+                      <th class="nhsuk-table__header">PIN</th>
+                      <td class="nhsuk-table__cell ">JG 08 23 89 A</td>
+                    </tr>
+                    <tr role="row" class="nhsuk-table__row ohs-table-no-last-row-border">
+                      <th class="nhsuk-table__header">Date of birth</th>
+                      <td class="nhsuk-table__cell ">3 December 1956</td>
+                      <th class="nhsuk-table__header">Address</th>
+                      <td class="nhsuk-table__cell ">Kirsten Flagstads Plass 1, 0150 Oslo, Norway</td>
+                    </tr>
+                  </tbody>
+              </table>
+
+              <div class="nhsuk-grid-column-one-thirds">
+                <button class="nhsuk-button nhsuk-button--secondary remove-margin-bottom" data-module="nhsuk-button" type="submit">
+                  Update OHS record
+                </button>
+              </div>
+    
+            </div>
+          
+            <div class="nhsuk-tabs__panel nhsuk-tabs__panel--hidden" id="entitlements">
+              
+              <!-- Entitlement Issued - Starts -->
+
+              <div class="nhsuk-grid-row">
+                <div class="nhsuk-grid-column-full">
+
+                  <table role="table" class="nhsuk-table-responsive ohs-match-record-table-font-size">
+                    <caption class="nhsuk-table__caption nhsuk-u-visually-hidden">OHS records search results</caption>
+                    <thead role="rowgroup" class="nhsuk-table__head">
+                      <tr role="row">
+                        <th role="columnheader" class="" scope="col">
+                          Entitlement type
+                        </th>
+                        <th role="columnheader" class="" scope="col">
+                          Start date
+                        </th>
+                        <th role="columnheader" class="" scope="col">
+                          End date
+                        </th>
+                        <th role="columnheader" class="" scope="col">
+                          Main or dependant
+                        </th>
+                        <th role="columnheader" class="" scope="col">
+                          Country
+                        </th>
+                        <th role="columnheader" class="" scope="col">
+                          Status
+                        </th>
+                      </tr>
+                    </thead>
+
+                    <tbody class="nhsuk-table__body">
+
+                      <tr role="row" class="nhsuk-table__row">
+                        <td role="cell" class="nhsuk-table__cell">
+                          <span class="nhsuk-table-responsive__heading" aria-hidden="true">Entitlement type </span>PRC
+                        </td>
+                        <td role="cell" class="nhsuk-table__cell">
+                          <span class="nhsuk-table-responsive__heading" aria-hidden="true">Start date </span>12 Feb 2022
+                        </td>
+                        <td role="cell" class="nhsuk-table__cell">
+                          <span class="nhsuk-table-responsive__heading" aria-hidden="true">End date </span>- 
+                        </td>
+                        <td role="cell" class="nhsuk-table__cell">
+                          <span class="nhsuk-table-responsive__heading" aria-hidden="true">Main or dependant </span>Main
+                        </td>
+                        <td role="cell" class="nhsuk-table__cell">
+                          <span class="nhsuk-table-responsive__heading" aria-hidden="true">Country </span>UK
+                        </td>
+                        <td role="cell" class="nhsuk-table__cell">
+                          <span class="nhsuk-table-responsive__heading" aria-hidden="true">Status </span> <span class="nhsuk-tag nhsuk-tag--green">Issued</span>
+                        </td>
+                      </tr>
+
+                      <tr role="row" class="nhsuk-table__row ohs-table-no-last-row-border">
+                        <td role="cell" class="nhsuk-table__cell">
+                          <span class="nhsuk-table-responsive__heading" aria-hidden="true">Entitlement type </span>S1
+                        </td>
+                        <td role="cell" class="nhsuk-table__cell">
+                          <span class="nhsuk-table-responsive__heading" aria-hidden="true">Start date </span>1 Jan 2021
+                        </td>
+                        <td role="cell" class="nhsuk-table__cell">
+                          <span class="nhsuk-table-responsive__heading" aria-hidden="true">End date </span>31 Dec 2021
+                        </td>
+                        <td role="cell" class="nhsuk-table__cell">
+                          <span class="nhsuk-table-responsive__heading" aria-hidden="true">Main or dependant </span>Main
+                        </td>
+                        <td role="cell" class="nhsuk-table__cell">
+                          <span class="nhsuk-table-responsive__heading" aria-hidden="true">Country </span>UK
+                        </td>
+                        <td role="cell" class="nhsuk-table__cell">
+                          <span class="nhsuk-table-responsive__heading" aria-hidden="true">Status </span> <span class="nhsuk-tag nhsuk-tag--grey">Expired</span>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+
+                </div>
+              </div>
+
+              <!-- Entitlement Issued - Ends -->
+
+              <div class="nhsuk-grid-column-one-thirds">
+                <form action="mvp-2-create-entitlement" method="post">
+                  <button class="nhsuk-button remove-margin-bottom nhsuk-u-margin-top-4" data-module="nhsuk-button" type="submit">
+                    Create S072 entitlement
+                  </button>
+                </form>
+              </div>
+
+            </div>
+          </div>
+
+          <details class="nhsuk-details">
+            <summary class="nhsuk-details__summary">
+              <span class="nhsuk-details__summary-text">
+                Edit search
+              </span>
+            </summary>
+            <div class="nhsuk-details__text">
+
+              <div class="nhsuk-grid-row">
+                
+                <!-- Righthand side -->
+
+                <div class="nhsuk-grid-column-one-half">
+
+                  <div class="nhsuk-form-group">
+                    <label class="nhsuk-label" for="example">
+                      First name
+                    </label>
+                    <input class="nhsuk-input" id="example" name="example" type="text">
+                  </div>
+
+                <div class="nhsuk-form-group">
+                  <fieldset class="nhsuk-fieldset" aria-describedby="example-hint" role="group">
+                    <legend class="nhsuk-fieldset__legend nhsuk-label--l">
+                      <label class="nhsuk-label nhsuk-u-font-weight-bold">
+                        What is your date of birth?
+                      </label>
+                    </legend>
+                    <div class="nhsuk-hint" id="example-hint">
+                      For example, 15 3 1984
+                    </div>
+                
+                    <div class="nhsuk-date-input nhsuk-u-padding-bottom-4" id="example">
+                      <div class="nhsuk-date-input__item">
+                        <div class="nhsuk-form-group">
+                          <label class="nhsuk-label nhsuk-date-input__label" for="example-day">
+                            Day
+                          </label>
+                          <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-2" id="example-day" name="example[day]" type="text" inputmode="numeric">
+                        </div>
+                      </div>
+                      <div class="nhsuk-date-input__item">
+                        <div class="nhsuk-form-group">
+                          <label class="nhsuk-label nhsuk-date-input__label" for="example-month">
+                            Month
+                          </label>
+                          <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-2" id="example-month" name="example[month]" type="text" inputmode="numeric">
+                        </div>
+                      </div>
+                      <div class="nhsuk-date-input__item">
+                        <div class="nhsuk-form-group">
+                          <label class="nhsuk-label nhsuk-date-input__label" for="example-year">
+                            Year
+                          </label>
+                          <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-4" id="example-year" name="example[year]" type="text" inputmode="numeric">
+                        </div>
+                      </div>
+                    </div>
+                  </fieldset>
+                </div>
+
+                <button class="nhsuk-button" data-module="nhsuk-button" type="submit">
+                  Search
+                </button>
+
+              </div>
+                <!-- Lefthand side -->
+
+                <div class="nhsuk-grid-column-one-half">
+                  <div class="nhsuk-form-group">
+                    <label class="nhsuk-label" for="example">
+                      Last name
+                    </label>
+                    <input class="nhsuk-input" id="example" name="example" type="text">
+                  </div>
+
+                  <div class="nhsuk-form-group">
+                    <label class="nhsuk-label" for="example">
+                      PIN (optional)
+                    </label>
+                    <input class="nhsuk-input" id="example" name="example" type="text">
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+          </details>
+
+          <details class="nhsuk-details">
+            <summary class="nhsuk-details__summary">
+              <span class="nhsuk-details__summary-text">
+                Results (3)
+              </span>
+            </summary>
+            <div class="nhsuk-details__text">
+              <p>Results go here.</p>
+            </div>
+          </details>
+
+        
+
+      <!-- in-page OHS Matched record - select record - End -->
+      </div>
+    </div>
+  </div>
+
+</div>
+{% endblock %}

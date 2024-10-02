@@ -23,10 +23,17 @@ header {
 }
 .nhsuk-header__logo {
     float: left;
+    margin-left: 16px;
 }
 .nhsuk-width-container, .nhsuk-header__container {
-    margin: 0 16px;
     max-width: 100% !important;
+}
+
+// Styles for the Prototype index page  //
+
+.nhsuk-width-prstart-container {
+    margin: 0 16px;
+    max-width: 960px;
 }
 .nhsuk-main-wrapper {
     padding-top: 48px !important;
@@ -40,4 +47,132 @@ header {
 }
 .nhsuk-card__content {
     padding: 32px;
+}
+
+// Styles for notification banners //
+
+.govuk-notification-banner {
+    border: 5px solid #1d70b8;
+    margin-bottom: 30px;
+
+    .govuk-notification-banner__content {
+        padding: 20px;
+    }
+    .govuk-notification-banner__content>:last-child {
+        margin-bottom: 0px;
+    }
+}
+
+// styles for manage case //
+
+.nhsuk-table .nhsuk-grid-column-one-third {
+    padding: 0 0;
+}
+.ohs-status-pensioner {
+    color:#007f3b;
+    padding-right: 20px;
+    display: block;
+}
+table.ohs-match-record-table-font-size .nhsuk-table__cell, table.ohs-match-record-table-font-size .nhsuk-table__head {
+    font-size: 16px !important;
+    font-size: 1rem !important;
+    line-height: 1.5 !important;
+}
+table.ohs-match-record-table-font-size .nhsuk-table__cell .nhsuk-button--secondary {
+    font-size: 16px !important;
+    font-size: 1rem !important;
+    line-height: 1.5 !important;
+    margin-bottom: 16px;
+    padding: 8px 16px;
+}
+.ohs-table-no-last-row-border th, .ohs-table-no-last-row-border td {
+    border-bottom: 0;
+}
+.remove-margin-bottom {
+    margin-bottom: 0;
+}
+.ohs-match-highlight {
+    background-color: #cce5d8;
+}
+
+// Timeline styles //
+
+.nhsuk-timeline__events {
+    border-left: 3px solid #005eb8;
+    list-style-type: none;
+    padding: 0;
+    padding-left: 15px;
+    margin-left: 16px;
+    margin-top: 8px;
+}
+.nhsuk-timeline__events--entry {
+    margin: 32px 0;
+    padding-left: 28px;
+    position: relative;
+    top: -12px;
+}
+.nhsuk-timeline__title {
+    display: inline;
+    font-size: 20px;
+    font-size: 1.5rem;
+}
+.nhsuk-timeline__date {
+    font-size: 1rem;
+    line-height: 1.25;
+    margin-bottom: 18px;
+}
+.nhsuk-timeline__header > .flag {
+    position: absolute;
+    top: 11px;
+    left: -32px;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    background-size: calc(100% + 2px);
+    background-position: center;
+    height: 32px;
+    width: 32px;
+    outline: 4px solid #005eb8;
+}
+.nhsuk-timeline__byline {
+    display: inline;
+    color: #4c6272;
+    font-size: 20px;
+    font-size: 1.25rem;
+    font-weight: normal;
+}
+.nhsuk-details__summary-text {
+    text-decoration: underline;
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+/****************  MVP-2 user flow screens ***************/
+.nhsBSA-sidebar-container {
+    display: flex;
+    flex-direction: column;
+    min-height: calc(100vh - 99px);
+    margin: 0 !important;
+    padding: 0;
+}
+.nhsuk-width-container, .nhsuk-header__container {
+    margin-left: 0 !important;
+}
+
+.nhsBSA-sidebar-container .nhsBSA-sidebar-wrapper {
+    flex: 1 0 auto;
+    display: flex;
+}
+
+.nhsBSA-sidebar-container .nhsBSA-sidebar-wrapper .nhsuk-header__navigation {
+    //background-color: #d8dde0;
+    width: 300px;
+    order: -1;
+    margin: 0;
+    padding-left: 16px;
+}
+.nhsBSA-sidebar-container .nhsBSA-sidebar-wrapper .nhsBSA-sidebar-content {
+    flex: 1;
+    background-color: #f0f4f5;
+    padding: 0px;
+    margin: 0px;
 }
