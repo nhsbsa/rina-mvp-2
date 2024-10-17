@@ -1,7 +1,22 @@
+.clearfix:after {
+    content:"";
+    display:block;
+    clear:both;
+   }
+
+.margin-left-right-lrg {
+    margin: 0 32px;
+}
+.nhsuk-header__logo a {
+    display: block;
+}
 .nhsuk-breadcrumb {
     background-color: #ffffff;
     padding-bottom: 12px;
     padding-top: 12px;
+}
+.nhsuk-breadcrumb .nhsuk-back-link {
+    margin-bottom: 0;
 }
 .nhsuk-width-container-fluid {
     margin: 0 16px;
@@ -85,7 +100,7 @@ table.ohs-match-record-table-font-size .nhsuk-table__cell .nhsuk-button--seconda
     margin-bottom: 16px;
     padding: 8px 16px;
 }
-.ohs-table-no-last-row-border th, .ohs-table-no-last-row-border td {
+.ohs-table-no-last-row-border th, .ohs-table-no-last-row-border td, .ohs-table-no-last-row-border dt,.ohs-table-no-last-row-border dd {
     border-bottom: 0;
 }
 .remove-margin-bottom {
@@ -154,9 +169,6 @@ table.ohs-match-record-table-font-size .nhsuk-table__cell .nhsuk-button--seconda
     margin: 0 !important;
     padding: 0;
 }
-.nhsuk-width-container, .nhsuk-header__container {
-    //margin-left: 0 !important;
-}
 
 .nhsBSA-sidebar-container .nhsBSA-sidebar-wrapper {
     flex: 1 0 auto;
@@ -175,4 +187,120 @@ table.ohs-match-record-table-font-size .nhsuk-table__cell .nhsuk-button--seconda
     background-color: #f0f4f5;
     padding: 0px;
     margin: 0px;
+}
+
+// MVP 1 matched OHS record styles  \\
+
+.nhsuk-card__content--secondary {
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+}
+.nhsuk-label--s {
+    display: block;
+}
+.nhsuk-table__body a {
+    color: #005eb8;
+}
+// Create S045 entitlement //
+
+.govuk-notification-banner__header {
+    padding: 2px 15px 5px;
+    border-bottom: 1px solid transparent;
+}
+.govuk-notification-banner__title {
+    font-size: 1.1875rem;
+    line-height: 1.3157894737;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+.govuk-notification-banner--success {
+    border-color: #00703c;
+    background-color: #00703c;
+}
+.govuk-notification-banner__content {
+    color: #0b0c0c;
+    padding: 15px;
+    background-color: #fff;
+}
+.icon-svg-envelope {
+    display: inline-block; 
+    background-image: url('../images/icon-ver2-envelope.svg');
+    background-size: contain; 
+    background-repeat: no-repeat; 
+    height: 16px; 
+    width: 20px;  
+    vertical-align: middle;
+    margin-right: 6px;
+}
+.ms-received {
+    background-image: url('../images/icon-received-envelope.svg');
+    background-size: contain; 
+    background-repeat: no-repeat; 
+    display: inline-block; 
+    height: 16px; 
+    width: 20px;  
+    vertical-align: middle;
+    margin-right: 6px;
+}
+
+// Footer  fix //
+.nhsuk-footer__list-item {
+    float: left;
+    margin-right: 32px;
+}
+.nhsuk-footer {
+    padding-bottom: 24px;
+    padding-top: 24px;
+    background-color: #d8dde0;
+    border-top: 4px solid #005eb8;
+    justify-content: space-between;
+}
+.nhsuk-footer .nhsuk-width-container {
+    width: 100%;
+    margin: 0 32px;
+}
+.nhsuk-footer__copyright {
+    float: right;
+    text-align: right;
+    width: 25%;
+}
+.moj-button-menu__toggle-button {
+    background-color: #fff;
+    border: none;
+    color: #005eb8;
+    font-size: 1rem;
+}
+.govuk-button::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -2px;
+    right: -2px;
+    bottom: -4px;
+    left: -2px;
+    background: transparent;
+}
+.moj-button-menu__toggle-button:after {
+    background-repeat: no-repeat;
+    background-image: url(../images/icon-arrow-black-down.svg);
+    content: "";
+    fill: #005eb8;
+    display: inline-block;
+    height: 5px;
+    margin-left: 10px;
+    width: 10px;
+    vertical-align: middle;
+}
+.moj-button-menu__toggle-button svg {
+    fill: #005eb8;
+}
+.moj-button-menu [role=menu] {
+    position: absolute;
+    width: 200px;
+    z-index: 10;
+}
+.moj-button-menu [aria-expanded=false] + [role=menu] {
+    display: none;
 }

@@ -1,0 +1,73 @@
+<!-- Use this page as the index for your project -->
+
+<!-- ADDING CUSTOM CSS - Add your custom CSS or Sass in /app/assets/sass/main.scss -->
+
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'layout.html' %}
+<!-- 
+  In /views/layout.html you can:
+    - change the header and footer 
+    - add custom CSS and JavaScript
+-->
+
+<!-- Set the page title -->
+{% block pageTitle %}
+  Overseas Healthcare Service RINA
+{% endblock %}
+
+<!-- For adding a breadcrumb -->
+<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/breadcrumbs -->
+{% block beforeContent %}
+  <nav class="nhsuk-breadcrumb clearfix" aria-label="Breadcrumb">
+
+    <div class="nhsuk-grid-column-one-half">
+      <ol class="nhsuk-breadcrumb__list">
+        <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="ohs-record-manage-case">Home</a></li>
+        <!--<li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="#"></a></li>-->
+      </ol>
+    </div>
+    <div class="nhsuk-grid-column-one-half" style="text-align: right;">
+      
+    </div>
+
+  </nav>
+{% endblock %}
+
+<!-- For adding a back link -->
+<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/back-link -->
+{% block outerContent %}
+{% endblock %}
+
+<!-- For adding page content -->
+<!-- Page layout code can be found at https://service-manual.nhs.uk/design-system/styles/layout -->
+{% block content %}
+<div class="nhsBSA-sidebar-container">
+  <div class="nhsBSA-sidebar-wrapper">
+    
+    <div class="nhsBSA-sidebar-content" style="padding: 0 32px;">
+
+      <div class="nhsuk-width-container-full">
+
+        <!-- notification -->
+
+        
+
+        <!-- Content -->
+
+        <div class="nhsuk-grid-row">
+        
+          <div class="nhsuk-grid-column-two-thirds">
+            <h1 class="nhsuk-heading-xl ">S045 reply form</h1>
+            <p><a href="ohs-record-manage-case-s045-sent">I've completed the form</a></p>
+        </div>
+            
+          <div class="nhsuk-grid-column-one-third" style="text-align:right;">
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</div>
+{% endblock %}
